@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ************************************************************************* */
+/* ******************************ROBE GENERALI****************************** */
+/* ************************************************************************* */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #e3f2fd;
+}
+
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
+/* ************************************************************************* */
+/* ******************************NAVBAR FISSA TOP****************************** */
+/* ************************************************************************* */
+.navbarTop{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #d2ebff;
+}
+
+.navbarTop h1 {
+  color: #1b3c59;
+  font-size: 30px;
+}
+
+/* ************************************************************************* */
+/* ******************************SEZIONE INPUT****************************** */
+/* ************************************************************************* */
+#inputDati{
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* gestione degli input presi dall'utente */
+.inputUtente{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.inputUtente div{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.inputUtente p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+/* gestisco le caratteristiche dei campi input */
+.inputUtente input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px rgba(27, 60, 89, 0.25) solid;
+  font-size: 19px;
+  background-color: white;
+}
+
+/* gestisco l'aspetto del bottone */
+button {
+    padding: 10px 85px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    border: none;
+    background-color: #61ce4e;
+    margin: 10px;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+/* ************************************************************************* */
+/* ***************************  SEZIONE STUDENTI ********************* */
+/* ************************************************************************* */
+.grigliaStudenti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  flex-wrap: wrap;
+}
+
+.grigliaStudenti h2{
+  text-align: center;
+  width: 100%;
+}
+
+.studente{
+  background-color: #1b3c59;
+  border-top: 6px rgba(0, 0, 0, 0.15) solid;
+  border-bottom: 6px rgba(0, 0, 0, 0.3) solid;
+  border-left: 6px #61ce4e solid;
+  border-right: 6px #61ce4e solid;
+  border-radius: 50px;
+  width: calc(100% / 3 - 40px);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.studente p{
+  color: white;
+  font-size: 21px;
+  margin-left: 35px;
+}
+
+.studente span{
+  color: lightgreen;
+}

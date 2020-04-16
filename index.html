@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- richiamo fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista Studenti</title>
+  </head>
+
+    <body>
+
+      <main>
+        <!-- barra fissa top -->
+        <div class="navbarTop">
+          <h1>Lista Studenti</h1>
+        </div>
+
+        <!-- sezione input -->
+          <div id="inputDati">
+            <!-- sezione che prende l'input dall'utente -->
+            <div class="inputUtente">
+              <div class="inputDatiStudente">
+                <p>Aggiungi un nuovo studente alla griglia</p>
+                <input id="nomeInput" type="text" name="nome" placeholder="Inserisci Nome" >
+                <input id="cognomeInput" type="text" name="cognome" placeholder="Inserisci Cognome" >
+                <input id="etaInput" type="number" name="eta" placeholder="Inserisci l'età" >
+              </div>
+            </div>
+          <!-- bottone che gestisce l'evento click -->
+            <button id="genera" type="button" name="button">
+              Aggiungi
+            </button>
+          </div>
+
+        <!-- sezione griglia studenti -->
+        <div class="grigliaStudenti">
+          <h2>Griglia Studenti</h2>
+          <!-- con HandleBars saranno aggiunti gli studenti -->
+        </div>
+
+      </main>
+
+      <script class="gestioneStudenti" type="text/x-handlebars-template">
+        <div class="studente">
+          <p>Nome: <span>{{nomeStudente}}</span></p>
+          <p>Cognome: <span>{{cognomeStudente}}</span></p>
+          <p>Età: <span>{{etaStudente}}</span></p>
+        </div>
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="main.js"> </script>
+    </body>
+
+</html>
